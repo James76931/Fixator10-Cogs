@@ -2698,7 +2698,7 @@ class Leveler(commands.Cog):
         label_align = 105
         _write_unicode("Rank:", label_align, 165, general_info_fnt, general_info_u_fnt, info_text_color)
         draw.text((label_align, 180), "Exp:", font=general_info_fnt, fill=info_text_color)  # Exp
-        draw.text((label_align, 195), "Credits:", font=general_info_fnt, fill=info_text_color)  # Credits
+        #draw.text((label_align, 195), "Credits:", font=general_info_fnt, fill=info_text_color)  # Credits
 
         # local stats
         num_local_align = 172
@@ -2738,7 +2738,7 @@ class Leveler(commands.Cog):
         #global_rank = await self._find_global_rank(user)
         #rank_number = global_rank if global_rank else "1000+"
         #rank_txt = global_symbol + self._truncate_text(f"#{rank_number}", 8)
-        #exp_txt = self._truncate_text(f"{userinfo['total_exp']}", 8)
+        exp_txt = self._truncate_text(f"{userinfo['total_exp']}", 8)
         #_write_unicode(
         #    rank_txt,
         #    num_align - general_info_u_fnt.getsize(global_symbol)[0] + fine_adjust,
@@ -2747,7 +2747,7 @@ class Leveler(commands.Cog):
         #    general_info_u_fnt,
         #    info_text_color,
         #)  # Rank
-        #_write_unicode(exp_txt, num_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
+        _write_unicode(exp_txt, num_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
 
         draw.text((105, 220), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
         margin = 105
