@@ -2738,7 +2738,7 @@ class Leveler(commands.Cog):
         #global_rank = await self._find_global_rank(user)
         #rank_number = global_rank if global_rank else "1000+"
         #rank_txt = global_symbol + self._truncate_text(f"#{rank_number}", 8)
-        #exp_txt = self._truncate_text(f"{userinfo['total_exp']}", 8)
+        exp_txt = self._truncate_text(f"{userinfo['total_exp']}", 8)
         #_write_unicode(
         #    rank_txt,
         #    num_align - general_info_u_fnt.getsize(global_symbol)[0] + fine_adjust,
