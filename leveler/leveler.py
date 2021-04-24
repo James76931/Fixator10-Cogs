@@ -2749,7 +2749,7 @@ class Leveler(commands.Cog):
         #)  # Rank
         #_write_unicode(exp_txt, num_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
 
-        draw.text((105, 206), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
+        draw.text((105, 205), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
         margin = 105
         offset = 223
         for line in textwrap.wrap(userinfo["info"], width=42):
