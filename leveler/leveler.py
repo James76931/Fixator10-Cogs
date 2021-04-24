@@ -2718,8 +2718,8 @@ class Leveler(commands.Cog):
             info_text_color,
         )  # Rank
 
-        s_exp_txt = self._truncate_text(f"{await self._find_server_exp(user, server)}", 8)
-        _write_unicode(s_exp_txt, num_local_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
+        #s_exp_txt = self._truncate_text(f"{await self._find_server_exp(user, server)}", 8)
+        #_write_unicode(s_exp_txt, num_local_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
         #credits = await bank.get_balance(user)
         #credit_txt = "£{}".format(credits)
         #draw.text(
