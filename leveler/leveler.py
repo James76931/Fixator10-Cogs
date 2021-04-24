@@ -2572,7 +2572,7 @@ class Leveler(commands.Cog):
 
         draw.rectangle([(left_pos - 20, vert_pos + title_height), (right_pos, 156)], fill=info_color)  # title box
         draw.rectangle([(100, 159), (285, 200)], fill=info_color)  # general content
-        draw.rectangle([(100, 202), (285, 285)], fill=info_color)  # info content
+        draw.rectangle([(100, 208), (285, 285)], fill=info_color)  # info content
 
         # stick in credits if needed
         # if bg_url in bg_credits.keys():
@@ -2749,9 +2749,9 @@ class Leveler(commands.Cog):
         #)  # Rank
         #_write_unicode(exp_txt, num_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
 
-        draw.text((105, 203), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
+        draw.text((105, 209), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
         margin = 105
-        offset = 221
+        offset = 227
         for line in textwrap.wrap(userinfo["info"], width=42):
             await asyncio.sleep(0)
             # draw.text((margin, offset), line, font=text_fnt, fill=(70,70,70,255))
