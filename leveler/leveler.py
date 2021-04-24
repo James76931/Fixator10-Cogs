@@ -2746,7 +2746,7 @@ class Leveler(commands.Cog):
         #    general_info_fnt,
         #    general_info_u_fnt,
         #    info_text_color,
-        )  # Rank
+        #)  # Rank
         _write_unicode(exp_txt, num_align, 180, general_info_fnt, general_info_u_fnt, info_text_color)  # Exp
 
         draw.text((105, 220), "Info Box", font=sub_header_fnt, fill=white_color)  # Info Box
