@@ -503,7 +503,7 @@ class Leveler(commands.Cog):
             userinfo = await self.db.users.find_one({"user_id": str(user.id)})
             await self.db.users.update_one({"user_id": str(org_user.id)}, {"$set": {"rep_block": curr_time}})
             await self.db.users.update_one({"user_id": str(user.id)}, {"$set": {"rep": userinfo["rep"] + 1}})
-            await ctx.send("**You have just given {} a reputation point!**".format(await self._is_mention(user)))
+            await ctx.send("**You have given {} a reputation point!**".format(await self._is_mention(user)))
         else:
             # calculate time left
             seconds = 43200 - delta
@@ -2019,7 +2019,7 @@ class Leveler(commands.Cog):
                 userinfo["badges"][badge_name] = badges[name]
                 await self.db.users.update_one({"user_id": str(user.id)}, {"$set": {"badges": userinfo["badges"]}})
                 await ctx.send(
-                    "**{} has just given {} the `{}` badge!**".format(
+                    "**{} has given {} the `{}` badge!**".format(
                         await self._is_mention(org_user), await self._is_mention(user), name
                     )
                 )
