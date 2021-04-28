@@ -6,7 +6,7 @@ import os
 import platform
 import random
 import re
-import stringj!cog update
+import string
 import textwrap
 import time
 from asyncio import TimeoutError
