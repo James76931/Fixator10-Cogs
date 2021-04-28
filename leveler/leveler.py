@@ -2702,7 +2702,7 @@ class Leveler(commands.Cog):
 
         # local stats
         num_local_align = 172
-        local_symbol = "\U0000020"
+        local_symbol = "\U0000020 "
         #if "linux" in platform.system().lower():
         #    local_symbol = "\U0001F3E0 "
         #else:
