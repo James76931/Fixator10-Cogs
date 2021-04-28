@@ -6,7 +6,7 @@ import os
 import platform
 import random
 import re
-import string
+import stringj!cog update
 import textwrap
 import time
 from asyncio import TimeoutError
@@ -2702,12 +2702,12 @@ class Leveler(commands.Cog):
 
         # local stats
         num_local_align = 172
-        # local_symbol = "\U0001F3E0 "
+        local_symbol = ""
         #if "linux" in platform.system().lower():
         #    local_symbol = "\U0001F3E0 "
         #else:
         #    local_symbol = "S "
-
+			      
         s_rank_txt = local_symbol + self._truncate_text(f"#{await self._find_server_rank(user, server)}", 8)
         _write_unicode(
             s_rank_txt,
