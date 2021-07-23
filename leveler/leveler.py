@@ -3163,18 +3163,18 @@ class Leveler(commands.Cog):
 
         # labels
         label_align = 200
-        draw.text((label_align, 38), "Server Rank:", font=general_info_fnt, fill=label_text_color)  # Server Rank
-        draw.text((label_align, 58), "Server Exp:", font=general_info_fnt, fill=label_text_color)  # Server Exp
+        draw.text((label_align, 48), "Server Rank:", font=general_info_fnt, fill=label_text_color)  # Server Rank
+        draw.text((label_align, 68), "Server Exp:", font=general_info_fnt, fill=label_text_color)  # Server Exp
         #draw.text((label_align, 78), "Credits:", font=general_info_fnt, fill=label_text_color)  # Credit
         # info
         right_text_align = 290
         rank_txt = f"#{await self._find_server_rank(user, server)}"
         draw.text(
-            (right_text_align, 38), self._truncate_text(rank_txt, 12), font=general_info_fnt, fill=label_text_color,
+            (right_text_align, 48), self._truncate_text(rank_txt, 12), font=general_info_fnt, fill=label_text_color,
         )  # Rank
         exp_txt = f"{await self._find_server_exp(user, server)}"
         draw.text(
-            (right_text_align, 58), self._truncate_text(exp_txt, 12), font=general_info_fnt, fill=label_text_color,
+            (right_text_align, 68), self._truncate_text(exp_txt, 12), font=general_info_fnt, fill=label_text_color,
         )  # Exp
         #credits = await bank.get_balance(user)
         #credit_txt = f"£{credits}"
