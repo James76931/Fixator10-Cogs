@@ -3165,7 +3165,7 @@ class Leveler(commands.Cog):
         label_align = 200
         draw.text((label_align, 38), "Server Rank:", font=general_info_fnt, fill=label_text_color)  # Server Rank
         draw.text((label_align, 58), "Server Exp:", font=general_info_fnt, fill=label_text_color)  # Server Exp
-        draw.text((label_align, 78), "Credits:", font=general_info_fnt, fill=label_text_color)  # Credit
+        #draw.text((label_align, 78), "Credits:", font=general_info_fnt, fill=label_text_color)  # Credit
         # info
         right_text_align = 290
         rank_txt = f"#{await self._find_server_rank(user, server)}"
@@ -3176,11 +3176,11 @@ class Leveler(commands.Cog):
         draw.text(
             (right_text_align, 58), self._truncate_text(exp_txt, 12), font=general_info_fnt, fill=label_text_color,
         )  # Exp
-        credits = await bank.get_balance(user)
-        credit_txt = f"£{credits}"
-        draw.text(
-            (right_text_align, 78), self._truncate_text(credit_txt, 12), font=general_info_fnt, fill=label_text_color,
-        )  # Credits
+        #credits = await bank.get_balance(user)
+        #credit_txt = f"£{credits}"
+        #draw.text(
+        #    (right_text_align, 78), self._truncate_text(credit_txt, 12), font=general_info_fnt, fill=label_text_color,
+        #)  # Credits
 
         image_object = BytesIO()
         result = Image.alpha_composite(result, process)
